@@ -1,0 +1,228 @@
+/* === BASE === */
+body.page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* === HEADER === */
+.header {
+  background: #1a1a1a;
+  color: white;
+  border-bottom: 4px solid #00c3ff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover {
+  color: #00c3ff;
+}
+
+.navbar__link--active {
+  color: #00c3ff;
+}
+
+/* === HERO === */
+.hero {
+  background: url("../imagenes/compu.jpeg") no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+}
+
+.hero__subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* === BOTONES === */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button--primary {
+  background-color: #00c3ff;
+  color: white;
+}
+
+.button--primary:hover {
+  background-color: #0097cc;
+}
+
+.button--animated:hover {
+  transform: scale(1.1);
+}
+
+/* === SECCIONES === */
+.section {
+  padding: 40px 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  background: white;
+  border: 3px solid #00c3ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section__title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section__text {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.section__image {
+  width: 300px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.section--cards {
+  text-align: center;
+}
+
+/* === TARJETAS === */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  transition: all 0.4s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card__title {
+  color: #0097cc;
+}
+
+.card__description {
+  color: #333;
+}
+
+.card--highlight {
+  border: 2px solid #00c3ff;
+}
+
+.card--shadow:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* === MENÚ DESPLEGABLE === */
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu__button {
+  background: #00c3ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu__submenu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #f4f4f4;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 180px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.menu:hover .menu__submenu {
+  max-height: 250px;
+}
+
+.menu__link {
+  display: block;
+  padding: 10px;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  background-color: #00c3ff;
+  color: white;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 25px 0;
+  border-top: 4px solid #00c3ff;
+  text-align: center;
+}
+
+.footer__title {
+  color: #00c3ff;
+}
+
+.footer__bottom {
+  color: #ccc;
+  font-size: 0.9rem;
+}
